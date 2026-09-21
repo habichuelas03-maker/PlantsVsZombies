@@ -8606,6 +8606,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1596830084}
   - component: {fileID: 1596830083}
+  - component: {fileID: 1596830085}
   m_Layer: 0
   m_Name: Zombie
   m_TagString: Untagged
@@ -8651,6 +8652,25 @@ Transform:
   - {fileID: 320193279}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+--- !u!114 &1596830085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596830082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8de23c599ef5fd445b8328ab2fee8ad0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  healthSlider: {fileID: 7995648229219348223}
+  onDeath:
+    m_PersistentCalls:
+      m_Calls: []
+  onTakeDamage:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1614264978
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11967,6 +11987,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cabd0999dc4916a4cb70d187d6144dc9, type: 3}
+--- !u!114 &7995648229219348223 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7558537120663541067, guid: cabd0999dc4916a4cb70d187d6144dc9, type: 3}
+  m_PrefabInstance: {fileID: 7995648229219348222}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
