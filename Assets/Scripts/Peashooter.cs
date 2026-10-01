@@ -62,7 +62,7 @@ public class Peashooter : Character
             canAttack = true;
             yield break;
         }
-        characterAnimator.Play("Shoot, 0, 0f");
+        characterAnimator.Play("Shoot", 0, 0f);
         yield return new WaitForSeconds(shooterPlantData.shootTime);
         GameObject bullet = PoolManager.Instance.GetObject(shooterPlantData.bulletPrefab,
             shootPivot.position);
