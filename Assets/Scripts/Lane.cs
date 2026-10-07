@@ -1,4 +1,5 @@
 using UnityEngine;
+ 
 public class Lane : MonoBehaviour
 {
     [SerializeField]
@@ -7,4 +8,8 @@ public class Lane : MonoBehaviour
     [SerializeField]
     private Transform laneStart;
     public Transform LaneStart => laneStart;
+    public Transform GetRandomZone()
+    {
+        return zones[Random.Range(0, zones.Length)];
+    }
 }
