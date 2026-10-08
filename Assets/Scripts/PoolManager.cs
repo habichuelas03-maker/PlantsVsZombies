@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
- 
+
 public class PoolManager : MonoBehaviour
 {
     private Dictionary<GameObject, Pool> pools = new Dictionary<GameObject, Pool>();
@@ -33,4 +33,3 @@ public class PoolManager : MonoBehaviour
         }
     }
 }
- 

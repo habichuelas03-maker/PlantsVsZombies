@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
- 
+
 public class Pool : MonoBehaviour
 {
     private Stack<GameObject> poolStack = new Stack<GameObject>();
@@ -40,4 +40,3 @@ public class Pool : MonoBehaviour
         poolStack.Push(obj);
     }
 }
- 
