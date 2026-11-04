@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
  
-public class Flower : Character
+public class Flower : Plant
 {
     [SerializeField]
     private FlowerData flowerData;

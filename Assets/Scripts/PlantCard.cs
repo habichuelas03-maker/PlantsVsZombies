@@ -6,9 +6,8 @@ using UnityEngine.EventSystems;
 public class PlantCard : MonoBehaviour, IPointerDownHandler
 {
     [SerializeField]
-    private int price;
-    [SerializeField]
     private TextMeshProUGUI priceText;
+    private int price => plantPrefab.GetComponent<Plant>().Price;
     [SerializeField]
     private GameObject plantPrefab;
     [SerializeField]
@@ -28,6 +27,7 @@ public class PlantCard : MonoBehaviour, IPointerDownHandler
             onPlantBought?.Invoke(plant.transform);
         }
     }
+   
     public void OnPointerDown(PointerEventData eventData)
     {
         TryToBuyPlant();
