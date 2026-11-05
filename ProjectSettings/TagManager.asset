@@ -9,6 +9,7 @@ TagManager:
   - Sun
   - Zone
   - Floor
+  - House
   layers:
   - Default
   - TransparentFX
