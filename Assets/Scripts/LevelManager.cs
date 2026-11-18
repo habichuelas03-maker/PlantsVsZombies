@@ -8,6 +8,8 @@ public class LevelManager : MonoBehaviour
     [SerializeField]
     private EnemiesManager enemiesManager;
     [SerializeField]
+    private CardsManager cardsManager;
+    [SerializeField]
     private UnityEvent onLevelComplete;
     [SerializeField]
     private LevelsData levelsData;

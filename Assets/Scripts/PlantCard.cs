@@ -27,11 +27,11 @@ public class PlantCard : MonoBehaviour, IPointerDownHandler
             onPlantBought?.Invoke(plant.transform);
         }
     }
-   
     public void OnPointerDown(PointerEventData eventData)
     {
         TryToBuyPlant();
     }
 }
+ 
  
  
